@@ -1,6 +1,12 @@
+import { ReactNode } from 'react';
 import './Card.css'
 
-export default ({ titulo, children }) => {
+export interface ICardPayload {
+  titulo: string;
+  children: ReactNode;
+}
+
+export default ({ children, titulo }: ICardPayload) => {
   return (
     <div className='Card'>
       <div className='Title'>{titulo}</div>

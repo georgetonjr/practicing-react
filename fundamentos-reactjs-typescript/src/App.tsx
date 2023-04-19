@@ -3,7 +3,7 @@ import ComParametro
   from './components/basicos/ComParametro'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
-export default (props) => {
+export default () => {
   return (
     <div>
       <h1>Fundamentos React</h1>
@@ -13,7 +13,7 @@ export default (props) => {
       <Card titulo="Primeiro">
       <Primeiro />
       </Card>
-      <Card titulo="Com Parametro">
+      <Card titulo='Com Parametro'>
       <ComParametro titulo="ola" subtitulo="mundo" />
       </Card>
     </div>
