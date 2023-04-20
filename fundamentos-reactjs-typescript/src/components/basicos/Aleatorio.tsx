@@ -5,8 +5,10 @@ export interface IAleatorioPayload {
 export default ({ min, max }: IAleatorioPayload) => {
   return (
     <div>
-      <p>valor minimo inserido: {min} e valor maximo inserido: {max}</p>
-      <p>numero aleatorio gerado foi: {Math.floor(Math.random() * (max - min + 1) + min)}</p>
+      <h1>Valor aleatorio</h1>
+      <p>valor minimo: {min}</p>
+      <p>valor maximo inserido: {max}</p>
+      <p>valor escolhido: {Math.floor(Math.random() * (max - min + 1) + min)}</p>
     </div>
   )
 }
