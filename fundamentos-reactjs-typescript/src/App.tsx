@@ -9,7 +9,7 @@ export default () => {
     <div className='App'>
       <h1>Fundamentos React</h1>
       <div className='Cards'>
-        <Card titulo="Desafio Aleatorio">
+        <Card titulo="Desafio Aleatorio" cor='#090'>
           <Aleatorio min={2} max={10} />
         </Card>
         <Card titulo="Primeiro">
