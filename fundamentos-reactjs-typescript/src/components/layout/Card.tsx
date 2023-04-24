@@ -4,7 +4,7 @@ import './Card.css'
 export interface ICardPayload {
   titulo: string;
   cor?: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export default ({ children, titulo, cor='#f00' }: ICardPayload) => {
