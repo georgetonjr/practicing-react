@@ -1,5 +1,4 @@
 export default (props) => {
-  console.log(props.produtos)
   return (
     <div>
       <table>
