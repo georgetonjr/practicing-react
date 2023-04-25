@@ -13,11 +13,16 @@ import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/Input'
 export default () => {
   return (
     <div className='App'>
       <h1>Fundamentos React</h1>
       <div className='Cards'>
+      <Card titulo=' componente controlado' cor='#091'>
+          <Input />
+        </Card>
+
         <Card titulo=' Comunicacao Indireta'>
           <IndiretaPai />
         </Card>
@@ -46,7 +51,7 @@ export default () => {
             <FamiliaMembro nome="lola" />
           </Familia>
         </Card>
-        
+
         <Card titulo="Desafio Aleatorio" cor='#090'>
           <Aleatorio min={2} max={100} />
         </Card>
