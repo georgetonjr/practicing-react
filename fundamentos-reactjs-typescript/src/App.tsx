@@ -14,12 +14,22 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 export default () => {
   return (
     <div className='App'>
       <h1>Fundamentos React</h1>
       <div className='Cards'>
-      <Card titulo=' componente controlado' cor='#091'>
+        <Card titulo='Mega-Sena' cor='#141'>
+          <Mega/>
+        </Card>
+
+        <Card titulo='Contador' cor='#141'>
+          <Contador numeroInicial={10}></Contador>
+        </Card>
+
+        <Card titulo=' componente controlado' cor='#091'>
           <Input />
         </Card>
 
@@ -28,20 +38,20 @@ export default () => {
         </Card>
 
         <Card titulo='heranca' cor='#098'>
-          <DiretaPai/>
+          <DiretaPai />
         </Card>
 
         <Card titulo='Par ou Impar' cor='#081'>
-          <UsuarioInfo usuario={{ }}/>
+          <UsuarioInfo usuario={{}} />
           <ParOuImpar numero={20} />
         </Card>
 
         <Card titulo='Tabela de Produtos'>
-          <TabelaProdutos produtos={produtos}/>
+          <TabelaProdutos produtos={produtos} />
         </Card>
 
         <Card titulo='Repetição'>
-          <ListaAlunos/>
+          <ListaAlunos />
         </Card>
 
         <Card titulo="Familia Com Membros" cor='#00f'>
